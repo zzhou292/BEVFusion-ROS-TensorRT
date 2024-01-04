@@ -6,18 +6,15 @@ def generate_launch_description():
 	node = Node(
 		package="bevfusion",  
 		executable="bevfusion_node",  
-		name='bevfusion_node',       
-		output='screen', 
+		name='bevfusion_node',        
 		
-		# 参数列表
 		parameters=[
 			{'model_name': 'resnet50'},
 			{'precision' : 'int16'}
 		]
 	)
 
-	# launch中启动没有读到rviz配置文件 可以自己修改
-	# rviz_node = Node(
+    # rviz_node = Node(
     #         package='rviz2',
     #         namespace='',
     #         executable='rviz2',

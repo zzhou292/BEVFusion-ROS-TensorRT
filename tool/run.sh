@@ -30,7 +30,10 @@ fi
 
 set -e
 
+
 mkdir -p build
+
+set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS};-gencode arch=compute_61,code=sm_61")
 
 cd build
 cmake ..
@@ -38,4 +41,4 @@ make -j
 
 cd ..
 
-./build/bevfusion $DEBUG_DATA $DEBUG_MODEL $DEBUG_PRECISION
+./build/bevfusion_node $DEBUG_DATA $DEBUG_MODEL $DEBUG_PRECISION

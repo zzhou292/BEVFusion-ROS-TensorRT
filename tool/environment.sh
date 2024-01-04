@@ -44,13 +44,13 @@ export CUDNN_Lib=/usr/lib/x86_64-linux-gnu
 
 # 选择模型3种：resnet50/resnet50int8/swint
 
- export DEBUG_MODEL=resnet50
+ export DEBUG_MODEL=resnet50int8
 # export DEBUG_MODEL=resnet50
 # export DEBUG_MODEL=swint
 
 # 模型精度2种：fp16/int8
 # export DEBUG_PRECISION=fp16
-export DEBUG_PRECISION=fp16
+export DEBUG_PRECISION=int8
 
 
 export DEBUG_DATA=example-data
