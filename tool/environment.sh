@@ -30,27 +30,27 @@
 # export TensorRT_Inc=/home/lin/software/TensorRT-8.2.1.8/include
 # export TensorRT_Bin=/home/lin/software/TensorRT-8.2.1.8/bin
 
-export TensorRT_Lib=/home/lin/software/TensorRT-8.5.3.1/lib
-export TensorRT_Inc=/home/lin/software/TensorRT-8.5.3.1/include
-export TensorRT_Bin=/home/lin/software/TensorRT-8.5.3.1/bin
+export TensorRT_Lib=/usr/lib/x86_64-linux-gnu
+export TensorRT_Inc=/workspace/tensorrt/include
+export TensorRT_Bin=/opt/tensorrt/bin
 
 export CUDA_Lib=/usr/local/cuda/lib64
 export CUDA_Inc=/usr/local/cuda/include
 export CUDA_Bin=/usr/local/cuda/bin
 export CUDA_HOME=/usr/local/cuda
 
-export CUDNN_Lib=/usr/local/cuda/lib64
+export CUDNN_Lib=/usr/lib/x86_64-linux-gnu
 
 
 # 选择模型3种：resnet50/resnet50int8/swint
 
-export DEBUG_MODEL=resnet50int8
+ export DEBUG_MODEL=resnet50
 # export DEBUG_MODEL=resnet50
 # export DEBUG_MODEL=swint
 
 # 模型精度2种：fp16/int8
 # export DEBUG_PRECISION=fp16
-export DEBUG_PRECISION=int8
+export DEBUG_PRECISION=fp16
 
 
 export DEBUG_DATA=example-data

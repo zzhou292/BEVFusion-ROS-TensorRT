@@ -39,7 +39,7 @@ export CUDNN_Lib=/path/to/cudnn/lib
 
 
 # resnet50/resnet50int8/swint
-export DEBUG_MODEL=resnet50int8
+export DEBUG_MODEL=resnet50
 
 # fp16/int8
 export DEBUG_PRECISION=fp16
