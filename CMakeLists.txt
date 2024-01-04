@@ -31,10 +31,10 @@ set(CUDA_INCLUDE_DIRS ${CUDA_TOOLKIT_ROOT_DIR}/${CUDA_INSTALL_TARGET_DIR}/includ
 set(CUDA_LIBS ${CUDA_TOOLKIT_ROOT_DIR}/${CUDA_INSTALL_TARGET_DIR}/lib)
 
 # TENSORRT
-set(TensorRT_ROOT /home/lin/software/TensorRT-8.5.3.1)
+set(TensorRT_ROOT /workspace/tensorrt/)
 # set(TensorRT_ROOT ~/share/software/TensorRT-8.5.3.1)
 set(TensorRT_INCLUDE_DIRS ${TensorRT_ROOT}/include)
-set(TensorRT_LIBS ${TensorRT_ROOT}/lib/)
+set(TensorRT_LIBS /usr/lib/x86_64-linux-gnu)
 
 find_package(CUDA REQUIRED)
 find_package(Protobuf REQUIRED)
